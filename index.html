@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="mallory-cvlh">
+    <meta name="description" content="Solo Project Basketball Scoreboard">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="sr-only">
+        <h1>Basketball Scoreboard</h1>
+    </header>
+
+    <main>
+        <article class="team">
+            <h2 id="home-team" class="team__title">home</h2>
+            <p id="score-home" class="team__score">0</p>
+            <section class="team__btn-group">
+                <button class="team__btn" onclick="addOneHome()">+1</button>
+                <button class="team__btn" onclick="addTwoHome()">+2</button>
+                <button class="team__btn" onclick="addThreeHome()">+3</button>
+            </section>
+        </article>
+        <button class="reset-btn" onclick="reset()">↺</button>
+        <article class="team">
+            <h2 id="guest-team" class="team__title">guest</h2>
+            <p id="score-guest" class="team__score">0</p>
+            <section class="team__btn-group">
+                <button class="team__btn" onclick="addOneGuest()">+1</button>
+                <button class="team__btn" onclick="addTwoGuest()">+2</button>
+                <button class="team__btn" onclick="addThreeGuest()">+3</button>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://github.com/mallory-cvlh" target="_blank">mallory-cvlh</a>
+        </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
